@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bzsample.mxxgldemo">
-
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +12,22 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".sample01.MxxGLActivity"></activity>
+        <activity android:name=".sample02.MxxGLActivity"></activity>
+        <activity android:name=".sample03.MxxGLActivity"></activity>
+        <activity android:name=".sample04.MxxGLActivity"></activity>
+        <activity android:name=".sample05.MxxGLActivity"></activity>
+        <activity android:name=".sample06.MxxGLActivity"></activity>
+        <activity android:name=".sample07.MxxGLActivity"></activity>
+        <activity android:name=".sample08.MxxGLActivity"></activity>
+        <activity android:name=".sample09.MxxGLActivity"></activity>
+        <activity android:name=".sample10.MxxGLActivity"></activity>
+        <activity android:name=".sample11.MxxGLActivity"></activity>
+        <activity android:name=".sample12.MxxGLActivity"></activity>
     </application>
 
 </manifest>
