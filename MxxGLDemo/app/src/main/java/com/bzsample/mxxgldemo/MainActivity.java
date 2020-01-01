@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         addItem(com.bzsample.mxxgldemo.sample10.MxxGLActivity.class, "sample10 shading skin smooth"); // base sample05
         addItem(com.bzsample.mxxgldemo.sample11.MxxGLActivity.class, "sample11 shading gray"); // base sample05
         addItem(com.bzsample.mxxgldemo.sample12.MxxGLActivity.class, "sample12 shading sharpen"); // base sample05
+        addItem(com.bzsample.mxxgldemo.sample13.MxxGLActivity.class, "sample13 FBO"); // base sample05
         //addItem(com.bzsample.mxxgldemo.sample06.MxxGLActivity.class, "sample12 touch event"); // base sample12
     }
 
