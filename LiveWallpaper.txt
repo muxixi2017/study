@@ -1,0 +1,14 @@
+
+
+uLiveWallpaper (Pro):
+https://assetstore.unity.com/packages/tools/integration/ulivewallpaper-pro-52477
+http://static.lostpolygon.com/unity-assets/ulivewallpaper/api-reference/html/T_LostPolygon_uLiveWallpaper_LiveWallpaper.htm
+http://static.lostpolygon.com/unity-assets/ulivewallpaper/files/uLiveWallpaper%20-%20User%20Manual.pdf
+https://forum.unity.com/threads/ulivewallpaper-develop-android-live-wallpapers-with-unity.375255/page-12
+
+
+
+https://forum.unity.com/threads/ulivewallpaper-develop-android-live-wallpapers-with-unity.375255/page-12
+apk反编译工具Jadx的使用:
+https://segmentfault.com/a/1190000004538998
+https://bintray.com/skylot/jadx/unstable/v1.1.0-b1279-2207cd7b#files
