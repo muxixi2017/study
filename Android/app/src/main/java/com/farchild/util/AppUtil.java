@@ -8,6 +8,7 @@ import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Log;
+import java.io.FileOutputStream;
 
 public class AppUtil { 
     private final static String TAG = "AppUtil";
@@ -23,6 +24,19 @@ public class AppUtil {
 
     public static Context getAppContext() {
         return mAppContext;
+    }
+
+    public static void writeFileData(String filename, byte[] bytes){
+        LogUtil.d(TAG, "writeFileData():");
+        try {
+            Context context = mAppContext;
+            FileOutputStream fos = context.openFileOutput(filename, Context.MODE_PRIVATE);//获得FileOutputStream
+            fos.write(bytes);//将byte数组写入文件
+            fos.close();//关闭文件输出流
+            LogUtil.d(TAG, "writeFileData():END" + bytes.length);
+        } catch (Exception e) {
+            LogUtil.d(TAG, "writeFileData():ERR:" + e.getMessage());
+        }
     }
 
     /*

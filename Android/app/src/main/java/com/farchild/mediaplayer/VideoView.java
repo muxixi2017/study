@@ -76,7 +76,12 @@ public class VideoView extends SurfaceView {
             //mMediaPlayer.setDataSource(mContext.getApplicationContext(), Uri.parse("android.resource://com.example.s1/" + R.raw.mp4_sample));//设置要播放的内容在根目录下的位置
             //mMediaPlayer.setDataSource("https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4");
             //mMediaPlayer.setDataSource("https://media.w3.org/2010/05/sintel/trailer.mp4");
-            mMediaPlayer.setDataSource(new MyMediaDataSource(mResLoader, "mp4_sample"));
+            //mMediaPlayer.setDataSource(new MyMediaDataSource(mResLoader, "mp4_sample"));
+
+            byte[] mMediaBytes = mResLoader.readRaw("mp4_sample");
+            AppUtil.writeFileData("mp4_sample4.mp4", mMediaBytes);
+            mMediaPlayer.setDataSource("file:///data/data/" + "com.example.s1" + "/files/mp4_sample4.mp4");
+
             mMediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
